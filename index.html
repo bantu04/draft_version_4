@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Banala - Life Transformation Specialist</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header section with navigation bar -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="header-info">
+                <h2>Jaya Banala</h2>
+                <p>Life Transformation Specialist</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="youtubeCourse.html" target="_blank">Courses</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="mailto:jaybanala@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/channel/UCtWB9q2-c9ZVQPZ98ejIGkA" target="_blank">
+                <img src="images/Youtube1.png" alt="YouTube-2">
+            </a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/channel/UCQKdunJhXB4Fhsix3Puxahw" target="_blank">
+                <img src="images/youtube.png" alt="YouTube-1">
+            </a>
+            
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Magical Transformation</h1>
+            <p>Your journey to a transformative life starts here.</p>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-image">
+                <img src="images/Jaya.jpg" alt="Jaya Banala">
+            </div>
+            <div class="about-info">
+                <h2>About the Specialist</h2>
+                <p>Life Transformation Specialist | Prayer Therapist | Speaker </p>
+                <p>Jaya Banala is a dedicated expert for personal empowerment and mindset transformation... <a href="about.html">view more</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome section -->
+    <section id="service" class="welcome-section">
+        <h2>Our Services</h2>
+        <div class="container welcome-grid">
+            <div class="welcome-item">
+                <h2>Vedic Classes</h2>
+                <img src="#" alt="thumbnail1" width="600" height="400">
+                <p>Starting a new session. Enroll now!</p>
+                <button onclick="enrollCourse()">Enroll</button>
+            </div>
+            <div class="welcome-item">
+                <h2>My Books</h2>
+                <img src="#" alt="thumbnail2" width="600" height="400">
+                <p>I've written a book on personal development. Get your copy now!</p>
+                <button onclick="bookDetail()">View Books</button>
+            </div>
+            <div class="welcome-item">
+                <h2>Professional Experience</h2>
+                <img src="#" alt="thumbnail3" width="600" height="400">
+                <p>My professional journey</p>
+                <button onclick="goToExperiencePage()">View More</button>
+            </div>
+            <div class="welcome-item">
+                <h2>Courses</h2>
+                <img src="#" alt="thumbnail4" width="600" height="400">
+                <p>I create personal development videos and prayer therapy videos online..</p>
+                <button onclick="youtubeCourse()">Watch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>Details about Service 1...</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Details about Service 2...</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 3</h3>
+                    <p>Details about Service 3...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials section -->
+    <section class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <button class="prev" onclick="prevTestimonial()">&#10094;</button>
+            <div class="testimonial">
+                <div id="media-container">
+                    <img id="testimonial-img" src="" alt="Customer">
+                    <video id="testimonial-video" controls style="display:none;">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <p id="testimonial-text">"This has been a life-changing experience. Highly recommend!" - Customer 1</p>
+            </div>
+            <button class="next" onclick="nextTestimonial()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Your journey to a transformative life starts here.</h2>
+            <p>"Small description to join"</p>
+            <a href="mailto:jaybanala@gmail.com" class="hero-button" target="_blank">Join the Experience</a>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="send_email.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="welcome-section">
+        <div class="subscribe-section">
+            <button onclick="subscribeToYouTube()">Subscribe to my YouTube Channel</button>
+        </div>
+    </section> -->
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UCtWB9q2-c9ZVQPZ98ejIGkA" target="_blank">
+                    <img src="images/Youtube1.png" alt="YouTube-2">
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/channel/UCQKdunJhXB4Fhsix3Puxahw" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube-1">
+                </a>
+                
+            </div>
+            <p>&copy; 2024 Jaya Banala. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

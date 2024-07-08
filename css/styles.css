@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+  background-color: #333; /* Background color for header */
+  color: #fff; /* Text color for header */
+  padding: 20px 0; /* Padding for header */
+}
+
+.header-container {
+  display: flex; /* Flexbox for header container */
+  justify-content: space-between; /* Space between logo, nav and social icons */
+  align-items: center; /* Align items center */
+  max-width: 1200px; /* Max width of container */
+  margin: 0 auto; /* Center container */
+}
+
+.logo img {
+  width: 50px; /* Logo size */
+}
+
+.header-info {
+  flex-grow: 1; /* Allow header info to grow */
+  padding-left: 20px; /* Padding between logo and info */
+  text-align: start;
+}
+
+.header-info a {
+  margin: 0; /* No margin for header info */
+  font-size: 24px; /* Font size for name */
+  color: #fff; /* Text color for name */
+  text-decoration: none;
+}
+
+.header-info p {
+  margin: 0; /* No margin for header info */
+  font-size: 14px; /* Font size for tagline */
+  color: #fff; /* Text color for tagline */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points from nav */
+  display: flex; /* Flexbox for nav links */
+  gap: 20px; /* Gap between nav links */
+}
+
+.nav-links li a {
+  color: #fff; /* Text color for nav links */
+  text-decoration: none; /* Remove underline from nav links */
+}
+
+.social-icons {
+  display: flex; /* Flexbox for social icons */
+  gap: 15px; /* Gap between social icons */
+  justify-content: end;
+  padding: 160px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.social-icons img {
+  width: 26px; /* Size of social icons */
+  height: 24px;
+}
+
+/* Hero section styling */
+.hero-section {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover; /* Background image for hero */
+  color: black; /* Text color for hero */
+  text-align: center; /* Center text for hero */
+  padding: 100px 20px; /* Padding for hero section */
+}
+
+.hero-section .hero-content h1 {
+  font-size: 48px; /* Font size for hero title */
+}
+
+.hero-section .hero-content p {
+  font-size: 24px; /* Font size for hero description */
+  margin: 20px 0; /* Margin for spacing */
+}
+
+.hero-section .hero-button {
+  background-color: #00796b; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline from button */
+  border-radius: 5px; /* Rounded corners for button */
+}
+
+/* About section styling */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-section .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.about-section .about-image img {
+  width: 250px;
+  border-radius: 50%;
+  
+}
+
+.about-section .about-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-info p, a{
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+/* Welcome section styling */
+.welcome-section {
+  padding: 60px 20px; /* Padding for welcome section */
+  background-color: #fff; /* Background color for welcome section */
+}
+
+.welcome-section h2 {
+  font-size: 24px; /* Font size for grid item title */
+  margin-bottom: 20px; /* Margin for spacing */
+  text-align: center;
+}
+
+.welcome-grid {
+  display: flex; /* Flexbox for welcome grid */
+  flex-wrap: wrap; /* Wrap items in grid */
+  gap: 20px; /* Gap between grid items */
+  justify-content: space-around; /* Space around grid items */
+}
+
+.welcome-item {
+  flex: 1 1 45%; /* Flex property for grid items */
+  background-color: #f9f9f9; /* Background color for grid items */
+  padding: 20px; /* Padding for grid items */
+  border: 1px solid #ddd; /* Border for grid items */
+  text-align: center; /* Center text in grid items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D shadow effect for grid items */
+  border-radius: 10px; /* Rounded corners for grid items */
+}
+
+.welcome-item h2 {
+  font-size: 24px; /* Font size for grid item title */
+  margin-bottom: 10px; /* Margin for spacing */
+}
+
+.welcome-item p {
+  margin-bottom: 5px; /* Margin for spacing */
+}
+
+.welcome-item img {
+  padding: 10px;
+  margin-bottom: 5px; /* Margin for spacing */
+}
+
+
+.subscribe-section {
+  text-align: center; /* Center the subscribe section */
+  padding: 20px 0; /* Padding for subscribe section */
+}
+
+.welcome-item button {
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  background-color: #00796b; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border from button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Top margin for buttons */
+}
+
+.subscribe-section button{
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  background-color: lightcoral; /* Button background color */
+  color: black; /* Button text color */
+  border: none; /* Remove border from button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Top margin for buttons */
+  font-weight: 600;
+}
+
+.subscribe-section button:hover{
+  background-color: lightgray;
+  color: black;
+}
+
+.welcome-item button:hover {
+  background-color: #004d40; /* Hover effect for buttons */
+}
+
+/* Services section styling */
+.services-section {
+  padding: 60px 20px; /* Padding for services section */
+  background-color: #f9f9f9; /* Background color for services section */
+}
+
+.services-section .container {
+  max-width: 1200px; /* Max width for container */
+  margin: 0 auto; /* Center container */
+}
+
+.services-section h2 {
+  text-align: center; /* Center text */
+  margin-bottom: 40px; /* Bottom margin for spacing */
+}
+
+.services-grid {
+  display: flex; /* Flexbox for services grid */
+  gap: 20px; /* Gap between grid items */
+}
+
+.service-item {
+  flex: 1; /* Flex property for grid items */
+  padding: 20px; /* Padding for grid items */
+  background-color: #fff; /* Background color for grid items */
+  border: 1px solid #ddd; /* Border for grid items */
+  text-align: center; /* Center text in grid items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D shadow effect for grid items */
+  border-radius: 5px; /* Rounded corners for grid items */
+}
+
+.service-item h3 {
+  margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+/* Contact section styling */
+.contact-section {
+  padding: 60px 20px; /* Padding for contact section */
+  background-color: #f9f9f9; /* Background color for contact section */
+  margin-bottom: 40px; /* Bottom margin for gap */
+}
+
+.contact-section .container {
+  max-width: 600px; /* Max width for container */
+  margin: 0 auto; /* Center container */
+}
+
+.contact-section h2 {
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.contact-section form {
+  display: flex; /* Flexbox for form */
+  flex-direction: column; /* Column direction for form */
+  gap: 20px; /* Gap between form elements */
+}
+
+.contact-section form label {
+  font-size: 18px; /* Font size for labels */
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  padding: 10px; /* Padding for input and textarea */
+  font-size: 16px; /* Font size for input and textarea */
+  border: 1px solid #ddd; /* Border for input and textarea */
+  border-radius: 5px; /* Rounded corners for input and textarea */
+}
+
+.contact-section form button {
+  padding: 10px; /* Padding for button */
+  font-size: 18px; /* Font size for button */
+  background-color: #00796b; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border from button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333; /* Background color for footer */
+  color: #fff; /* Text color for footer */
+  padding: 20px 0; /* Padding for footer */
+  text-align: center; /* Center text for footer */
+}
+
+footer .container {
+  display: flex; /* Flexbox for footer container */
+  flex-direction: column; /* Column direction for container */
+  align-items: center; /* Center items in container */
+  max-width: 1200px; /* Max width for container */
+  margin: 0 auto; /* Center container */
+  p{
+    padding-top: 15px;
+  }
+}
+
+footer .social-icons {
+  display: flex; /* Flexbox for social icons */
+  gap: 10px; /* Gap between social icons */
+  margin-top: 20px; /* Margin to separate from other content */
+  gap: 20px;
+}
+
+footer .social-icons img {
+  width: 26px; /* Size of social icons */
+  height: 24px;
+  
+}
+
+.content {
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Center text for content */
+}
+
+.content h2 {
+  margin-bottom: 20px; /* Bottom margin for h2 */
+  text-align: center; /* Center text for h2 */
+}
+
+.content p {
+  color: #000; /* Text color for p */
+  margin-bottom: 10px; /* Bottom margin for p */
+  text-align: justify;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-about p {
+  color: #000; /* Text color for p */
+  text-align: justify;
+  padding: 10px;
+  color: #000; /* Text color for p */
+  margin: 10px auto; /* Center the p */
+  width: 700px; /* Fixed width for p */
+  padding-bottom: 0px; /* Padding inside the box */
+  
+}
+
+.content-about h2 {
+  margin-bottom: 10px; /* Bottom margin for h2 */
+  text-align: center; /* Center text for h2 */
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+.content-about a {
+  display: block; /* Block display for a */
+  margin: 20px auto; /* Center the link */
+  text-decoration: none; /* Remove underline from link */
+  color: #00796b; /* Link color */
+  text-align: center;
+}
+
+.content a {
+  display: block; /* Block display for a */
+  margin: 20px auto; /* Center the link */
+  text-decoration: none; /* Remove underline from link */
+  color: #00796b; /* Link color */
+}
+
+.content button {
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  background-color: #00796b; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border from button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Top margin for buttons */
+}
+
+.content button:hover {
+  background-color: #004d40; /* Hover effect for buttons */
+}
+
+header {
+  background-color: #333; /* Background color for header */
+  color: #fff; /* Text color for header */
+  padding: 20px 0; /* Padding for header */
+  text-align: center; /* Center text for header */
+}
+
+header h1 {
+  color: #fff; /* Text color for h1 in header */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #004d40;
+}
+
+/* Book and Video Grid Styling */
+.book-grid, .video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.book-item, .video-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+  border-radius: 10px;
+  width: 300px;
+}
+
+.book-item img, .video-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.book-item button, .video-item button {
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  background-color: #00796b; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border from button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Top margin for buttons */
+}
+
+.book-item button:hover, .video-item button:hover {
+  background-color: #004d40; /* Hover effect for buttons */
+}
+
+/* Testimonials section styling */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0 20px;
+}
+
+#media-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+#testimonial-img{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#testimonial-video {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #333;
+}
+
+button.prev, button.next {
+  color: black;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 70px;
+  margin: 0 10px;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: gray;
+}
